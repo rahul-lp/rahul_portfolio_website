@@ -3,6 +3,19 @@
     cursor: none;
 }
 
+/* For the scrollbar itself */
+::-webkit-scrollbar {
+    width: 5px;  /* Adjust width for vertical scrollbars */
+    height: 5px;  /* Adjust height for horizontal scrollbars */
+}
+
+
+/* Handle or thumb (the part you drag) */
+::-webkit-scrollbar-thumb {
+    background: #267CFF;  /* Change to your preferred color */
+    border-radius: 2px;
+}
+
 .font_poppins{
     font-family: 'Poppins', sans-serif;
 }
@@ -22,6 +35,7 @@
 .color_text_gray{
     color: #8B8B8B;
 }
+
 
 .background_color_blue{
     background-color: #FAFCFF;
@@ -74,12 +88,15 @@
 }
 
 .example_image {
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1%;.
 }
 
 
 .example_image:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .hover_item:hover {
