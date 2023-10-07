@@ -60,3 +60,8 @@ function setPDFHeight() {
 window.addEventListener("DOMContentLoaded", setPDFHeight);
 
 window.addEventListener("resize", setPDFHeight);
+
+// copy email to clipboard
+document.getElementById('copyEmail').addEventListener('click', function() {
+    navigator.clipboard.writeText("rajpurohit.lp@gmail.com");
+});
