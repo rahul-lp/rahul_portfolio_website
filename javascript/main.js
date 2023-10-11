@@ -62,6 +62,8 @@ window.addEventListener("DOMContentLoaded", setPDFHeight);
 window.addEventListener("resize", setPDFHeight);
 
 // copy email to clipboard
-document.getElementById('copyEmail').addEventListener('click', function() {
+function copyEmailCilpboard() {
     navigator.clipboard.writeText("rajpurohit.lp@gmail.com");
-});
+    alert("Copied to clipboard: rajpurohit.lp@gmail.com");
+    console.log("copy email clicked!")
+}
