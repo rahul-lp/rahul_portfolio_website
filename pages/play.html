@@ -43,10 +43,10 @@
                         <a class="nav-link" aria-current="page" href="../index.html">Select Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="other_work.html">Other Work</a>
+                        <a class="nav-link active" href="play.html">Play</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="play.html">Play</a>
+                        <a class="nav-link" href="other_work.html">More Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -90,9 +90,17 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Left Column -->
-            <div class="col-md-6 py-4">
+            <div class="col-md-12 col-lg-6 py-4">
                 <!-- Heading for Left Column -->
-                <div class="row mx-md-5 mx-2 justify-content-end animate_work">
+                <div class="row mx-lg-5 mx-2 justify-content-end animate_work d-none d-lg-flex">
+                    <div class="col col-md-10 animate_hidden">
+                        <div class="h6 pt-2 font_poppins hover_item_white_back color_text_gray">
+                            Generative AI
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-lg-5 mx-2 justify-content-start animate_work d-lg-none d-block">
                     <div class="col col-md-10 animate_hidden">
                         <div class="h6 pt-2 font_poppins hover_item_white_back color_text_gray">
                             Generative AI
@@ -102,19 +110,21 @@
                 </div>
     
                 <!-- Nested Row for Cards in Left Column -->
-                <div class="row mx-md-5 mx-2">
-                    <div class="col-2"></div>
+                <div class="row mx-lg-5 mx-2">
+                    <div class="col-2 d-none d-lg-block"></div>
                     <div class="col-md-5 mt-2">
+                        <a href="play_pages/generative_music.html" target="_blank" class="text-decoration-none">
                         <div class="card profile-card-5 animate_hidden hover_item_white_back">
                             <div class="card-img-block">
                                 <img class="card-img-top" src="../res/play_res/music_ai.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body pt-2 font_poppins">
-                                <h5 class="card-title">Text-to-Song Generation</h5>
-                                <p class="card-text font-small">Losing myself in the music, I imagined how Eminem's song 'Lose Yourself'
+                                <h5 class="card-title color_textblack">Text-to-Song Generation</h5>
+                                <p class="card-text font-small color_textblack">Losing myself in the music, I imagined how Eminem's song 'Lose Yourself'
                                     might sound like in different styles.</p>
                             </div>
                         </div>
+                    </a>
                     </div>
                     <div class="col-md-5 mt-2">
                         <div class="card profile-card-5 animate_hidden hover_item_white_back">
@@ -127,13 +137,27 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-2 d-none d-lg-block"></div>
+                    <div class="col-md-5 mt-2">
+                        <a href="https://youtube.com/playlist?list=PLMeXaqTLa8l56r88sO_yjTYmEeRvWwKf3&feature=shared" target="_blank" class="text-decoration-none">
+                        <div class="card profile-card-5 animate_hidden hover_item_white_back">
+                            <div class="card-img-block">
+                                <img class="card-img-top" src="../res/play_res/forcasting.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body pt-2 font_poppins">
+                                <h5 class="card-title color_textblack">Lip Sync - Storyboarding</h5>
+                                <p class="card-text font-small color_textblack">Created storyboards for Future Forecasting project, where 3 characters from Utopian, Dystopian and Protopian futures tell their day in life.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
                 </div>
             </div>
     
             <!-- Right Column -->
-            <div class="col-md-6 py-4">
+            <div class="col-md-12 col-lg-6 py-4">
                 <!-- Heading for Left Column -->
-                <div class="row mx-md-5 mx-2 justify-content-start animate_work">
+                <div class="row mx-lg-5 mx-2 justify-content-start animate_work">
                     <div class="col col-md-10 animate_hidden">
                         <div class="h6 pt-2 font_poppins hover_item_white_back color_text_gray">
                             Animation
@@ -143,37 +167,76 @@
                 </div>
     
                 <!-- Nested Row for Cards in Left Column -->
-                <div class="row mx-md-5 mx-2">
+                <div class="row mx-lg-5 mx-2">
                     <div class="col-md-5 mt-2">
-                        <div class="card profile-card-5 animate_hidden hover_item_white_back">
-                            <div class="card-img-block">
-                                <img class="card-img-top" src="../res/play_res/dizzy_drive_animation.jpg" alt="Card image cap">
+                        <a href="https://youtube.com/shorts/QwjKJzZiox4" target="_blank" class="text-decoration-none">
+                            <div class="card profile-card-5 animate_hidden hover_item_white_back">
+                                <div class="card-img-block">
+                                    <img class="card-img-top" src="../res/play_res/dizzy_drive_animation.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body pt-2 font_poppins">
+                                    <h5 class="card-title color_textblack">Dizzy Drive</h5>
+                                    <p class="card-text font-small color_textblack">2.5D animation. Combining 2D & 3D artifacts</p>
+                                </div>
                             </div>
-                            <div class="card-body pt-2 font_poppins">
-                                <h5 class="card-title">Dizzy Drive</h5>
-                                <p class="card-text font-small">2.5D animation. Combining 2D & 3D artifacts</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-5 mt-2">
+                        <a href="https://youtu.be/S3Lhl1STn7w" target="_blank" class="text-decoration-none">
                         <div class="card profile-card-5 animate_hidden hover_item_white_back">
                             <div class="card-img-block">
                                 <img class="card-img-top" src="../res/play_res/rooftop_forest.jpg" alt="Card image cap">
                             </div>
                             <div class="card-body pt-2 font_poppins">
-                                <h5 class="card-title">Rooftop Forest</h5>
-                                <p class="card-text font-small">Based on a 'Draw in your style' challenge, I re-created the illustration in 3D animation with character animations.</p>
+                                <h5 class="card-title color_textblack">Rooftop Forest</h5>
+                                <p class="card-text font-small color_textblack">Based on a 'Draw in your style' challenge, I re-created the illustration in 3D animation with character animations.</p>
                             </div>
                         </div>
+                    </a>
                     </div>
-                    <div class="col-2"></div>
+                    <div class="col-2 d-none d-lg-block"></div>
+                    <div class="col-md-5 mt-2">
+                        <a href="https://youtube.com/shorts/QwjKJzZiox4" target="_blank" class="text-decoration-none">
+                            <div class="card profile-card-5 animate_hidden hover_item_white_back">
+                                <div class="card-img-block">
+                                    <img class="card-img-top" src="../res/play_res/play_ground.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body pt-2 font_poppins">
+                                    <h5 class="card-title color_textblack">Dizzy Drive</h5>
+                                    <p class="card-text font-small color_textblack">2.5D animation. Combining 2D & 3D artifacts</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-5 mt-2">
+                        <a href="https://youtu.be/S3Lhl1STn7w" target="_blank" class="text-decoration-none">
+                        <div class="card profile-card-5 animate_hidden hover_item_white_back">
+                            <div class="card-img-block">
+                                <img class="card-img-top" src="../res/play_res/rooftop_forest.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body pt-2 font_poppins">
+                                <h5 class="card-title color_textblack">Rooftop Forest</h5>
+                                <p class="card-text font-small color_textblack">Based on a 'Draw in your style' challenge, I re-created the illustration in 3D animation with character animations.</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-2 d-none d-lg-block"></div>
                 </div>
             </div>
 
             <!-- Left Column -->
-            <div class="col-md-6 py-4">
+            <div class="col-md-12 col-lg-6 py-4">
                 <!-- Heading for Left Column -->
-                <div class="row mx-md-5 mx-2 justify-content-end animate_work">
+                <div class="row mx-lg-5 mx-2 d-none d-lg-flex justify-content-end animate_work">
+                    <div class="col col-md-10 animate_hidden">
+                        <div class="h6 pt-2 font_poppins hover_item_white_back color_text_gray">
+                            Game Mechanics
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-lg-5 mx-2 justify-content-start animate_work d-block d-lg-none">
                     <div class="col col-md-10 animate_hidden">
                         <div class="h6 pt-2 font_poppins hover_item_white_back color_text_gray">
                             Game Mechanics
@@ -183,37 +246,41 @@
                 </div>
     
                 <!-- Nested Row for Cards in Left Column -->
-                <div class="row mx-md-5 mx-2">
-                    <div class="col-2"></div>
+                <div class="row mx-lg-5 mx-2">
+                    <div class="col-2 d-none d-lg-block"></div>
                     <div class="col-md-5 mt-2">
+                        <a href="https://youtu.be/3maTpvJBTqU" target="_blank" class="text-decoration-none">
                         <div class="card profile-card-5 animate_hidden hover_item_white_back">
                             <div class="card-img-block">
                                 <img class="card-img-top" src="../res/play_res/platformer_game.gif" alt="Card image cap">
                             </div>
                             <div class="card-body pt-2 font_poppins">
-                                <h5 class="card-title">Platformer Mechanics</h5>
-                                <p class="card-text font-small">A Mario-like platformer game mechanics with gravity, jump, coind & multiple enimies mechanics.</p>
+                                <h5 class="card-title color_textblack">Platformer Mechanics</h5>
+                                <p class="card-text font-small color_textblack">A Mario-like platformer game mechanics with gravity, jump, coind & multiple enimies mechanics.</p>
                             </div>
                         </div>
+                    </a>
                     </div>
                     <div class="col-md-5 mt-2">
+                        <a href="https://youtu.be/ixv8mC46ZnI" target="_blank" class="text-decoration-none">
                         <div class="card profile-card-5 animate_hidden hover_item_white_back">
                             <div class="card-img-block">
                                 <img class="card-img-top" src="../res/play_res/shooter_game.gif" alt="Card image cap">
                             </div>
                             <div class="card-body pt-2 font_poppins">
-                                <h5 class="card-title">Shooter Mechanics</h5>
-                                <p class="card-text font-small">Shooter with mouse tracking and shooting mechanics</p>
+                                <h5 class="card-title color_textblack">Space Shooter Mechanics</h5>
+                                <p class="card-text font-small color_textblack">Shooter with mouse tracking and shooting mechanics</p>
                             </div>
                         </div>
+                    </a>
                     </div>
                 </div>
             </div>
     
             <!-- Right Column -->
-            <div class="col-md-6 py-4">
+            <div class="col-md-12 col-lg-6 py-4">
                 <!-- Heading for Left Column -->
-                <div class="row mx-md-5 mx-2 justify-content-start animate_work">
+                <div class="row mx-lg-5 mx-2 justify-content-start animate_work">
                     <div class="col col-md-10 animate_hidden">
                         <div class="h6 pt-2 font_poppins hover_item_white_back color_text_gray">
                             Misc
@@ -223,7 +290,7 @@
                 </div>
     
                 <!-- Nested Row for Cards in Left Column -->
-                <div class="row mx-md-5 mx-2">
+                <div class="row mx-lg-5 mx-2">
                     <div class="col-md-5 mt-2">
                         <div class="card profile-card-5 animate_hidden hover_item_white_back">
                             <div class="card-img-block">
@@ -235,51 +302,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-2"></div>
-                </div>
-            </div>
-
-            
-        </div>
-
-        
-
-        <!-- <div class="row mx-md-5 mx-2 justify-content-center animate_work">
-            <div class="col col-md-10 animate_hidden">
-                <div class="h6 pt-2 font_poppins hover_item_white_back color_text_gray">
-                    Generative AI Shenanigans
-                    <hr>
+                    <div class="col-2 d-none d-lg-block"></div>
                 </div>
             </div>
         </div>
-        <div class="row mx-md-5 mx-2">
-            <div class="col-1"></div>
-            <div class="col-md-3 mt-4">
-                <div class="card profile-card-5 animate_hidden hover_item">
-                    <div class="card-img-block">
-                        <img class="card-img-top" src="../res/play_res/test_1.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body pt-2 font_poppins">
-                        <h5 class="card-title">Text-to-Song Generation</h5>
-                        <p class="card-text">Losing myself in the music, I imagined how Eminem's song 'Lose Yourself'
-                            might sound like in different styles.</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mt-4">
-                <div class="card profile-card-5  animate_hidden hover_item">
-                    <div class="card-img-block">
-                        <img class="card-img-top" src="../res/play_res/test_1.png" alt="Card image cap">
-                    </div>
-                    <div class="card-body pt-2 font_poppins">
-                        <h5 class="card-title">Generative Art</h5>
-                        <p class="card-text">Isn't it amazing that you can bring your craziest imaginations into reality.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
