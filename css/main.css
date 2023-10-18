@@ -54,6 +54,19 @@
     transition: all 0.2s ease;
 }
 
+.animate_hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-5%);
+    transition: all 0.3s ease;
+}
+
+.animate_hidden_top {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-5%);
+    transition: all 0.3s ease;
+}
 
 .animate_show {
     opacity: 1;
@@ -102,6 +115,15 @@
 }
 
 .hover_item_top {
+    transition: all 0.3s ease;
+}
+
+.hover_item_white_back:hover {
+    transform: scale(1.1);
+    color: #141019;
+}
+
+.hover_item_white_back {
     transition: all 0.3s ease;
 }
 

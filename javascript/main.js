@@ -50,17 +50,6 @@ document.addEventListener('mousemove', e=>{
     });
 })
 
-// PDF dynamic height
-
-function setPDFHeight() {
-    let viewportHeight = window.innerHeight;
-    document.getElementById("pdfEmbed").style.height = `${0.9 * viewportHeight}px`;
-    document.getElementById("pdfEmbed2").style.height = `${0.9 * viewportHeight}px`;
-}
-
-window.addEventListener("DOMContentLoaded", setPDFHeight);
-window.addEventListener("resize", setPDFHeight);
-
 // copy email to clipboard
 function copyEmailCilpboard() {
     navigator.clipboard.writeText("rajpurohit.lp@gmail.com");
@@ -68,28 +57,6 @@ function copyEmailCilpboard() {
     console.log("copy email clicked!")
 }
 
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     // Reference to the gif and the text
-//     const gifElement = document.querySelector('.hi_gif');
-//     const textElement = document.querySelector('.hi_text');
-
-//     // Function to play the gif
-//     function playGif() {
-//         gifElement.style.display = 'block';
-        
-//         // Assuming the gif lasts 5 seconds; adjust as needed
-//         setTimeout(() => {
-//             gifElement.style.display = 'none';
-//         }, 2800); 
-//     }
-
-//     // Initially play the gif when the page loads
-//     playGif();
-
-//     // Play the gif again when the text is hovered over
-//     textElement.addEventListener('mouseover', playGif);
-// });
 
 document.addEventListener("DOMContentLoaded", function() {
     // Reference to the gif and the text
@@ -110,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
             gifElement.style.display = 'none';
             // Reattach the event listener after gif plays
             textElement.addEventListener('mouseover', handleHover);
-        }, 2700);  // 5000ms = 5 seconds
+        }, 2800);  // 5000ms = 5 seconds
     }
 
     // Function to handle hover event
