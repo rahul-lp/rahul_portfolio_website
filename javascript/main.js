@@ -59,7 +59,6 @@ function setPDFHeight() {
 }
 
 window.addEventListener("DOMContentLoaded", setPDFHeight);
-
 window.addEventListener("resize", setPDFHeight);
 
 // copy email to clipboard
@@ -68,3 +67,62 @@ function copyEmailCilpboard() {
     alert("Copied to clipboard: rajpurohit.lp@gmail.com");
     console.log("copy email clicked!")
 }
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Reference to the gif and the text
+//     const gifElement = document.querySelector('.hi_gif');
+//     const textElement = document.querySelector('.hi_text');
+
+//     // Function to play the gif
+//     function playGif() {
+//         gifElement.style.display = 'block';
+        
+//         // Assuming the gif lasts 5 seconds; adjust as needed
+//         setTimeout(() => {
+//             gifElement.style.display = 'none';
+//         }, 2800); 
+//     }
+
+//     // Initially play the gif when the page loads
+//     playGif();
+
+//     // Play the gif again when the text is hovered over
+//     textElement.addEventListener('mouseover', playGif);
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Reference to the gif and the text
+    const gifElement = document.querySelector('.hi_gif');
+    const textElement = document.querySelector('.hi_text');
+
+    // Function to play the gif
+    function playGif() {
+        // Ensure gif starts from the beginning
+        const gifSrc = gifElement.getAttribute('src');
+        gifElement.setAttribute('src', ''); 
+        gifElement.setAttribute('src', gifSrc);
+
+        gifElement.style.display = 'block';
+
+        // Assuming the gif lasts 5 seconds; adjust as needed
+        setTimeout(() => {
+            gifElement.style.display = 'none';
+            // Reattach the event listener after gif plays
+            textElement.addEventListener('mouseover', handleHover);
+        }, 2700);  // 5000ms = 5 seconds
+    }
+
+    // Function to handle hover event
+    function handleHover() {
+        // Detach the event listener to prevent replay while gif is playing
+        textElement.removeEventListener('mouseover', handleHover);
+        playGif();
+    }
+
+    // Initially play the gif when the page loads
+    playGif();
+
+    // // Play the gif again when the text is hovered over
+    // textElement.addEventListener('mouseover', handleHover);
+});

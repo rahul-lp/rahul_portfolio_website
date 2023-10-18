@@ -54,19 +54,6 @@
     transition: all 0.2s ease;
 }
 
-.animate_hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-5%);
-    transition: all 0.3s ease;
-}
-
-.animate_hidden_top {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateY(-5%);
-    transition: all 0.3s ease;
-}
 
 .animate_show {
     opacity: 1;
@@ -131,6 +118,16 @@
 
     transition-duration: 10ms;
     transition-timing-function: ease-out;
+
+}
+
+.hi_gif {
+    position: absolute;
+    display: none;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* This is to account for the GIF's own dimensions so it's truly centered */
+    z-index: -1;
 
 }
 
