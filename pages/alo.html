@@ -27,7 +27,7 @@
     <div class="trailer">
         <i id="trailer-icon" class="fa-solid fa-arrow-up-right"></i>
     </div>
-    <nav class="navbar navbar-expand-md navbar-light sticky-top background_color_blue animate_hidden_top">
+    <nav id="mainNav" class="navbar navbar-expand-md navbar-light sticky-top background_color_blue animate_hidden_top">
         <div class="container-fluid mx-md-3">
             <a class="navbar-brand font_poppins" href="../index.html">Rahul</a>
             <!-- navbar toggle button -->
@@ -43,16 +43,13 @@
                         <a class="nav-link active" aria-current="page" href="../index.html">Select Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="play.html">Play</a>
+                        <a class="nav-link" href="play.html">Experiments</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="other_work.html">More Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/rahul-rajpurohit/" target="_blank">LinkedIn</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../res/Rahu_Rajpurohitl_Resume.pdf" target="_blank">Resume</a>
@@ -65,12 +62,63 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row mx-md-5 py-md-3 mx-2 justify-content-center">
-            <div class="col">
-                <!-- <iframe src="../res/alo_case_study.pdf" width="100%"></iframe> -->
-                <embed id="pdfEmbed" src="../res/alo_case_study.pdf" type="application/pdf" width="100%" height="80%">
-            </div>
+    <nav>
+        <div id="secNav" class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link navcolor active" id="nav-overview-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview"
+                aria-selected="true">Overview</button>
+            <button class="nav-link navcolor" id="nav-brief-tab" data-bs-toggle="tab" data-bs-target="#nav-brief"
+                type="button" role="tab" aria-controls="nav-brief" aria-selected="false">Design Brief</button>
+            <button class="nav-link navcolor" id="nav-research-tab" data-bs-toggle="tab" data-bs-target="#nav-research"
+                type="button" role="tab" aria-controls="nav-research" aria-selected="false">Research & Insights</button>
+            <button class="nav-link navcolor" id="nav-ideations-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-ideations" type="button" role="tab" aria-controls="nav-ideations"
+                aria-selected="false">Core Ideation</button>
+            <button class="nav-link navcolor" id="nav-interaction-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-interaction" type="button" role="tab" aria-controls="nav-interaction"
+                aria-selected="false">Interaction Design</button>
+            <button class="nav-link navcolor" id="nav-behaviour-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-behaviour" type="button" role="tab" aria-controls="nav-behaviour"
+                aria-selected="false">Behaviour Design</button>
+            <button class="nav-link navcolor" id="nav-example-tab" data-bs-toggle="tab" data-bs-target="#nav-example"
+                type="button" role="tab" aria-controls="nav-example" aria-selected="false">Examples</button>
+            <button class="nav-link navcolor" id="nav-next-tab" data-bs-toggle="tab" data-bs-target="#nav-next"
+                type="button" role="tab" aria-controls="nav-next" aria-selected="false">Next Steps</button>
+        </div>
+    </nav>
+    <!-- Content for each tab -->
+    <div id="navTabContent" class="tab-content text-center" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+            <!-- Content for overview -->
+            <img src="../res/alo/overview.png" class="img-fluid">
+        </div>
+        <div class="tab-pane fade" id="nav-brief" role="tabpanel" aria-labelledby="nav-brief-tab">
+            <!-- Content for brief -->
+            <img src="../res/alo/brief.png" class="img-fluid">
+        </div>
+        <div class="tab-pane fade" id="nav-research" role="tabpanel" aria-labelledby="nav-research-tab">
+            <!-- Content for research -->
+            <img src="../res/alo/research.png" class="img-fluid">
+        </div>
+        <div class="tab-pane fade" id="nav-ideations" role="tabpanel" aria-labelledby="nav-ideations-tab">
+            <!-- Content for ideations -->
+            <img src="../res/alo/ideations.png" class="img-fluid">
+        </div>
+        <div class="tab-pane fade" id="nav-interaction" role="tabpanel" aria-labelledby="nav-interaction-tab">
+            <!-- Content for interaction -->
+            <img src="../res/alo/interaction.png" class="img-fluid">
+        </div>
+        <div class="tab-pane fade" id="nav-behaviour" role="tabpanel" aria-labelledby="nav-behaviour-tab">
+            <!-- Content for behaviour -->
+            <img src="../res/alo/behavior.png" class="img-fluid">
+        </div>
+        <div class="tab-pane fade" id="nav-example" role="tabpanel" aria-labelledby="nav-example-tab">
+            <!-- Content for example -->
+            <img src="../res/alo/examples.png" class="img-fluid">
+        </div>
+        <div class="tab-pane fade" id="nav-next" role="tabpanel" aria-labelledby="nav-next-tab">
+            <!-- Content for example -->
+            <img src="../res/alo/next.png" class="img-fluid">
         </div>
     </div>
 

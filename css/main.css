@@ -162,3 +162,8 @@
     border-width: 3px;         /* Set the thickness of the border */
     border-radius: 15px;       /* Set the roundness of the border */
 }
+
+
+.navcolor {
+    color: #A7A7A7;
+}

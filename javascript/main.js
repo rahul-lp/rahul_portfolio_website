@@ -63,6 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const gifElement = document.querySelector('.hi_gif');
     const textElement = document.querySelector('.hi_text');
 
+    var playGifTimer; // Timer for playing the gif every 5 seconds
+    
     // Function to play the gif
     function playGif() {
         // Ensure gif starts from the beginning
@@ -72,12 +74,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
         gifElement.style.display = 'block';
 
-        // Assuming the gif lasts 5 seconds; adjust as needed
+        // Gif lasts 2.8 seconds
         setTimeout(() => {
             gifElement.style.display = 'none';
             // Reattach the event listener after gif plays
-            textElement.addEventListener('mouseover', handleHover);
-        }, 2800);  // 5000ms = 5 seconds
+            textElement.addEventListener('mouseover', handleHover);        
+            resetPlayGifTimer();
+        }, 2800);  // 2800ms = 2.8 seconds
+    }
+
+    // Function to reset and start the timer to play the gif
+    function resetPlayGifTimer() {
+        clearTimeout(playGifTimer); // Clear any existing timer
+        playGifTimer = setTimeout(handleHover, 8000); // Set a new timer for 8 seconds
     }
 
     // Function to handle hover event
@@ -90,6 +99,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initially play the gif when the page loads
     playGif();
 
-    // // Play the gif again when the text is hovered over
-    // textElement.addEventListener('mouseover', handleHover);
 });
