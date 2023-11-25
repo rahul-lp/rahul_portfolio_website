@@ -49,6 +49,10 @@
     background-color: #141019;
 }
 
+.background_color_gray{
+    background-color: #E8F0FD;
+}
+
 .navbar_scrolled {
     background-color: #141019;
     color: #FAFCFF;
@@ -165,5 +169,5 @@
 
 
 .navcolor {
-    color: #A7A7A7;
+    color: #626262;
 }
