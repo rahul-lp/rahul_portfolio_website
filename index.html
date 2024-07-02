@@ -23,12 +23,68 @@
     <link rel="stylesheet" href="css/main.css">
 
     <title>Rahul Rajpurohit</title>
+
+    <style>
+        /* Style for the toast container */
+        .toast-container {
+            visibility: hidden; /* Hidden by default */
+            min-width: 250px;
+            margin-left: -125px; /* Center the toast */
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            top: 80px; /* Show at the top */
+            font-size: 17px;
+        }
+
+        /* Show the toast */
+        .toast-container.show {
+            visibility: visible; /* Show the toast */
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        /* Animations to fade the toast in and out */
+        @-webkit-keyframes fadein {
+            from {top: 0; opacity: 0;}
+            to {top: 80px; opacity: 1;}
+        }
+
+        @keyframes fadein {
+            from {top: 0; opacity: 0;}
+            to {top: 80px; opacity: 1;}
+        }
+
+    </style>
 </head>
 
 <body class="background_color_blue">
     <div class="trailer">
         <i id="trailer-icon" class="fa-solid fa-arrow-up-right" ></i>
     </div>
+    <!-- The Toast -->
+<div id="toast" class="toast-container">
+    🚀 Major Portfolio Update Ahead! Stay Tuned! 🌟
+</div>
+
+<script>
+    // Function to show the toast
+    function showToast() {
+        var toast = document.getElementById("toast");
+        toast.className = "toast-container show";
+        setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 6000);
+    }
+
+    // Show the toast when the site loads
+    window.onload = function() {
+        showToast();
+    }
+</script>
     <nav class="navbar navbar-expand-md navbar-light sticky-top background_color_blue animate_hidden_top">
         <div class="container-fluid mx-md-3">
             <a class="navbar-brand font_poppins" href="index.html">Rahul</a>
@@ -79,7 +135,7 @@
                     Hi, I am Rahul. 👋
                 </div>
                 <div class="h5 pt-2 hover_item_top">
-                    Leveraging Power of Design to Navigate AI Product Challenges.
+                    A Designer Developer with mind of a Researcher.
                 </div>
             </div>
             <div class="col-md-1 d-none d-md-block">
@@ -87,10 +143,10 @@
             </div>
             <div class="col-12 col-md-4 my-lg-5 animate_hero animate_hidden">
                 <div class="h6 pt-2 hover_item_top">
-                    <b>With a background in software development and a master's in UX design, I aim to blend Business, Design, and Technology, to build AI products for a positive impact on business and society.</b>
+                    With the moto of <b>‘Embrace Ambiguity, Discover Serendipity’</b>, I Create surprisingly innovative experiences by deep diving into complex human lives & identifying intents & emotions behind actions & decisions.
                 </div>
                 <div class="h6 pt-2 hover_item_top">
-                    Currently looking for AI Product Design opportunities. Connect at rajpurohit.lp@gmail.com 
+                    Currently looking for Product Design opportunities. Connect at rajpurohit.lp@gmail.com 
                 </div>
             </div>
         </div>
